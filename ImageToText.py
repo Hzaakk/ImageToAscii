@@ -3,7 +3,7 @@ import numpy as np
 import bisect
 import os
 
-RESOLUTION = 300 # How many lines of text
+RESOLUTION = 50 # How many lines of text. Will give an error if too high
 SCALE = ' .,-:"»/¤=+*Xc%ZM#@¶'[::-1]
 RANGES = [round(255/len(SCALE) * i) for i in range(len(SCALE))]
 img = cv2.imread('image.jpg', 0)
